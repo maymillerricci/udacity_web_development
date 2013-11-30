@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+        <!-- <link type = "text/css" rel="stylesheet" href="/static/main.css"> -->
+        <title>Blog Signup</title>
+    </head>
+	
+	<body>
+		<h2>Signup</h2>
+
+			<form method="post">
+			<label>
+			    Username
+			    <input type="text" name="username" value="{{username}}">
+			</label>
+			<div style="color: red">{{error1}}</div>
+			<br>
+			<label>
+			    Password
+			    <input type="password" name="password">
+			</label>
+			<div style="color: red">{{error2}}</div>
+			<br>
+			<label>
+			    Verify Password
+			    <input type="password" name="verify">
+			</label>
+			<div style="color: red">{{error3}}</div>
+			<br>
+			<label>
+			    Email (optional)
+			    <input type="text" name="email" value="{{email}}">
+			</label>
+			<div style="color: red">{{error4}}</div>
+			<br>
+			<input type="submit">
+		</form>
+
+	</body>
+</html>
+

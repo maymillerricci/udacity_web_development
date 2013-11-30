@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+        <link type = "text/css" rel="stylesheet" href="/static/main.css">
+        <title>Blog</title>
+	</head>
+
+	<body>
+		<h1>Blog</h1>
+
+		<div class="login-area">
+			<a href="/blog">Home</a>
+			<a href="/blog/signup">Sign Up</a>
+			<a href="/blog/login">Log In</a>
+			<a href="/blog/logout">Log Out</a>
+			<a href="/blog/newpost">New Post</a>
+		</div>
+
+
+		{% for post in posts %}
+		    <div class="post">
+		    	<div class="post-title">{{post.subject}}</div>
+		    	<pre class="post-content">{{post.content}}</pre>
+		    </div>
+		{% endfor %}
+
+		<div>{{x}}</div>
+
+	</body>
+</html>
+
